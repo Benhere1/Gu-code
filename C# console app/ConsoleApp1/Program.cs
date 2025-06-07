@@ -1,4 +1,4 @@
-﻿//Copy from here and paste in a c# console or any c# compiler online by deleting the main class
+//Copy from here and paste in a c# console or any c# compiler online by deleting the main class
 public static class Program
 {
     public class Stats
@@ -222,14 +222,15 @@ public static class Program
         while (con1 == true)
         {
             con2 = true;
+            Console.Clear();
             while (con2 == true)
             {
                 player.reRoll();
                 player.CharStats();
- 
+
                 Console.WriteLine("\nEnter 1 to Reroll stats\nOR enter any other key to continue");
                 input(ref input1);
- 
+
                 if (input1.Equals("1"))
                 {
                     con2 = false;
@@ -239,17 +240,16 @@ public static class Program
                     con2 = false;
                     con1 = false;
                 }
- 
+                Console.Clear();
             }
         }
         //Choose tasks section
-        while (con1 == false)
-        {
-            while (con2 == false)
+            while (con1 == false)
             {
+                Console.Clear();
                 Console.WriteLine("\nInput the number of the task to perform\n(1)Cultivate apreture\n(2)Rest\n(3)Use primival stones\n(4)Check current stats\n(5)Check game Instructions");
                 input(ref input1);
- 
+
                 if (input1.Equals("1"))
                 {
                     player.refinewall();
@@ -270,10 +270,10 @@ public static class Program
                 }
                 else if (input1.Equals("5"))
                 {
-                    Console.WriteLine("Cultivating apreture uses you essence to decrease apreture Hp.\nWhen apreture Hp reaches zero you make a breakthrough and apreture hp increases by 50.\nWhen you rest you recover essence according to talent for 6 hours.\nBut you appreture Hp also recovers the recovery rate increasing per rank.\nYou can also use stones to recover you essence but the rate halves per breakthrough.");
+                    Console.WriteLine("Cultivating apreture uses your essence to decrease apreture Hp.\nWhen apreture Hp reaches zero you make a breakthrough and apreture hp increases by 50.\nWhen you rest you recover essence according to talent for 6 hours.\nBut you appreture Hp also recovers the recovery rate increasing per rank.\nYou can also use stones to recover you essence but the rate halves per breakthrough.");
+                    Console.WriteLine("\nInput any key to continue");
+                    input(ref input1);
                 }
-
             }
-        }
     }
 }
