@@ -246,7 +246,6 @@ public static class Program
         //Choose tasks section
             while (con1 == false)
             {
-                Console.Clear();
                 Console.WriteLine("\nInput the number of the task to perform\n(1)Cultivate apreture\n(2)Rest\n(3)Use primival stones\n(4)Check current stats\n(5)Check game Instructions");
                 input(ref input1);
 
